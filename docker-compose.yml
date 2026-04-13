@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  rita-bot:
+    build: .
+    env_file: .env
+    restart: unless-stopped
+    depends_on:
+      - lumina-api
+
+  lumina-api:
+    image: python:3.12-slim
+    env_file: .env
+    working_dir: /app
+    volumes:
+      - ./lumina:/app
+    command: uvicorn main:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"
+    profiles:
+      - lumina
