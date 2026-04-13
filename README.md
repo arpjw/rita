@@ -1,10 +1,26 @@
-# Rita
+<div align="center">
+  <img src="https://getrita.app/avatar.png" alt="Rita" width="120" height="120" style="border-radius: 50%"/>
+  <h1>Rita</h1>
+  <p><strong>The macro research layer for your Discord server.</strong></p>
+  <p>
+    <a href="https://getrita.app">Website</a> ·
+    <a href="https://discord.com/oauth2/authorize?client_id=1493339120242786434&scope=bot+applications.commands&permissions=277025770560">Add to Discord</a> ·
+    <a href="https://monolithsystematic.com">Monolith Systematic</a>
+  </p>
+  <br/>
+</div>
 
-**The macro research assistant that lives in your server.**
-
-Rita is an open-source Discord bot for quantitative and macro traders. She brings a conversational research layer directly into your team's Discord — pulling live data from FRED and Kalshi, classifying the current macro regime via the [Lumina](https://github.com/arpjw/lumina) backend, and enabling document Q&A on central bank communications.
+Rita is an open-source Discord bot purpose-built for quantitative and macro traders. She brings a conversational research layer directly into your team's server — pulling live data from FRED and Kalshi, classifying the current macro regime via the [Lumina](https://github.com/arpjw/lumina) backend, and enabling document Q&A on central bank communications.
 
 Built by [Monolith Systematic LLC](https://monolithsystematic.com).
+
+---
+
+## Add Rita to Your Server
+
+**[→ Add Rita to Discord](https://discord.com/oauth2/authorize?client_id=1493339120242786434&scope=bot+applications.commands&permissions=277025770560)**
+
+Or visit [getrita.app](https://getrita.app) for more information.
 
 ---
 
@@ -68,6 +84,22 @@ make dev
 ## Contributing
 
 Rita's data layer is built around a clean connector interface. Adding a new data source is straightforward — see [CONTRIBUTING.md](./CONTRIBUTING.md).
+
+Priority areas for community contribution:
+- COT (Commitments of Traders) positioning connector
+- Bloomberg / Refinitiv adapter
+- Norgate futures pricing connector
+- ECB / BOJ / BOE data adapters
+
+---
+
+## Stack
+
+- **Bot framework:** py-cord
+- **Data:** FRED API, Kalshi Trading API, Norgate (optional)
+- **Intelligence:** Anthropic Claude API (claude-sonnet-4-20250514)
+- **Regime backend:** [Lumina](https://github.com/arpjw/lumina) (optional)
+- **Infra:** Docker, Python 3.12
 
 ---
 
