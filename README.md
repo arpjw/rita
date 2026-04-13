@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="https://getrita.app/avatar.png" alt="Rita" width="120" height="120" style="border-radius: 50%"/>
   <h1>Rita</h1>
   <p><strong>The macro research layer for your Discord server.</strong></p>
   <p>
